@@ -1,0 +1,281 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Hyperledger.Aries.AspNetCore</name>
+    </assembly>
+    <members>
+        <member name="T:Hyperledger.Aries.AspNetCore.AgentMiddleware">
+            <summary>
+            An agent middleware
+            </summary>
+        </member>
+        <member name="M:Hyperledger.Aries.AspNetCore.AgentMiddleware.#ctor(Microsoft.AspNetCore.Http.RequestDelegate)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Hyperledger.Aries.AspNetCore.AgentMiddleware"/> class.
+            </summary>
+            <param name="aNext">Context provider.</param>
+        </member>
+        <member name="M:Hyperledger.Aries.AspNetCore.AgentMiddleware.Invoke(Microsoft.AspNetCore.Http.HttpContext,Hyperledger.Aries.Agents.IAgentProvider)">
+            <summary>
+            Invokes the agent processing pipeline
+            </summary>
+            <param name="aHttpContext"></param>
+            <param name="aAgentProvider"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Hyperledger.Aries.AspNetCore.Configuration.AriesOpenApiOptions.UseSwaggerUi">
+            <summary>
+            Enable Swagger UI
+            </summary>
+            <remarks>Default is true</remarks>
+        </member>
+        <member name="M:Hyperledger.Aries.AspNetCore.Features.BasicMessaging.SendMessageEndpoint.Process(Hyperledger.Aries.AspNetCore.Features.BasicMessaging.SendMessageRequest)">
+            <summary>
+            Send a message to a connection
+            </summary>
+            <remarks>
+            Longer Description
+            </remarks>
+            <param name="aSendMessageRequest"></param>
+            <returns><see cref="T:Hyperledger.Aries.AspNetCore.Features.BasicMessaging.SendMessageResponse"/></returns>
+        </member>
+        <member name="M:Hyperledger.Aries.AspNetCore.Features.Connections.AcceptInvitationEndpoint.Process(Hyperledger.Aries.AspNetCore.Features.Connections.AcceptInvitationRequest)">
+            <summary>
+            Accept a connection invitation
+            </summary>
+            <remarks>
+            Longer Description
+            </remarks>
+            <param name="aAcceptInvitationRequest"></param>
+            <returns><see cref="T:Hyperledger.Aries.AspNetCore.Features.Connections.AcceptInvitationResponse"/></returns>
+        </member>
+        <member name="M:Hyperledger.Aries.AspNetCore.Features.Connections.CreateInvitationEndpoint.Process(Hyperledger.Aries.AspNetCore.Features.Connections.CreateInvitationRequest)">
+            <summary>
+            Create a ConnectionInvitationMessage and store corresponding ConnectionRecord in Wallet
+            </summary>
+            <param name="aCreateInvitationRequest"><see cref="T:Hyperledger.Aries.AspNetCore.Features.Connections.CreateInvitationRequest"/></param>
+            <returns><see cref="T:Hyperledger.Aries.AspNetCore.Features.Connections.CreateInvitationResponse"/></returns>
+        </member>
+        <member name="M:Hyperledger.Aries.AspNetCore.Features.Connections.DeleteConnectionEndpoint.Process(Hyperledger.Aries.AspNetCore.Features.Connections.DeleteConnectionRequest)">
+            <summary>
+            Delete a connection record
+            </summary>
+            <param name="aDeleteConnectionRequest"><see cref="T:Hyperledger.Aries.AspNetCore.Features.Connections.DeleteConnectionRequest"/></param>
+            <returns><see cref="T:Hyperledger.Aries.AspNetCore.Features.Connections.DeleteConnectionResponse"/></returns>
+        </member>
+        <member name="M:Hyperledger.Aries.AspNetCore.Features.Connections.GetConnectionsEndpoint.Process(Hyperledger.Aries.AspNetCore.Features.Connections.GetConnectionsRequest)">
+            <summary>
+            Return all ConnectionRecords 
+            </summary>
+            <param name="aGetConnectionsRequest"><see cref="T:Hyperledger.Aries.AspNetCore.Features.Connections.GetConnectionsRequest"/></param>
+            <returns><see cref="T:Hyperledger.Aries.AspNetCore.Features.Connections.GetConnectionsResponse"/></returns>
+        </member>
+        <member name="M:Hyperledger.Aries.AspNetCore.Features.Connections.GetConnectionEndpoint.Process(Hyperledger.Aries.AspNetCore.Features.Connections.GetConnectionRequest)">
+            <summary>
+            Return a single ConnectionRecord
+            </summary>
+            <param name="aGetConnectionRequest"><see cref="T:Hyperledger.Aries.AspNetCore.Features.Connections.GetConnectionRequest"/></param>
+            <returns><see cref="T:Hyperledger.Aries.AspNetCore.Features.Connections.GetConnectionResponse"/></returns>
+        </member>
+        <member name="M:Hyperledger.Aries.AspNetCore.Features.Connections.ReceiveInvitationEndpoint.Process(Hyperledger.Aries.AspNetCore.Features.Connections.ReceiveInvitationRequest)">
+            <summary>
+            Receive a new connection invitation
+            </summary>
+            <remarks>
+            Longer Description
+            </remarks>
+            <param name="aReceiveInvitationRequest"></param>
+            <returns><see cref="T:Hyperledger.Aries.AspNetCore.Features.Connections.ReceiveInvitationResponse"/></returns>
+        </member>
+        <member name="M:Hyperledger.Aries.AspNetCore.Features.Connections.SendPingEndpoint.Process(Hyperledger.Aries.AspNetCore.Features.Connections.SendPingRequest)">
+            <summary>
+            Send a trust ping to a connection
+            </summary>
+            <remarks>
+            Longer Description
+            </remarks>
+            <param name="aSendPingRequest"></param>
+            <returns><see cref="T:Hyperledger.Aries.AspNetCore.Features.Connections.SendPingResponse"/></returns>
+        </member>
+        <member name="F:Hyperledger.Aries.AspNetCore.Features.Connections.SendPingHandler.TrustPingResponseMessageType">
+            <summary>
+            Ping Response Message Type.
+            </summary>
+        </member>
+        <member name="M:Hyperledger.Aries.AspNetCore.Features.CredentialDefinitions.CreateCredentialDefinitionEndpoint.Process(Hyperledger.Aries.AspNetCore.Features.CredentialDefinitions.CreateCredentialDefinitionRequest)">
+            <summary>
+            Sends a credential definition to the ledger
+            </summary>
+            <param name="aCreateCredentialDefinitionRequest"><see cref="T:Hyperledger.Aries.AspNetCore.Features.CredentialDefinitions.CreateCredentialDefinitionRequest"/></param>
+            <returns><see cref="T:Hyperledger.Aries.AspNetCore.Features.CredentialDefinitions.CreateCredentialDefinitionResponse"/></returns>
+        </member>
+        <member name="M:Hyperledger.Aries.AspNetCore.Features.CredentialDefinitions.GetCredentialDefinitionsEndpoint.Process(Hyperledger.Aries.AspNetCore.Features.CredentialDefinitions.GetCredentialDefinitionsRequest)">
+            <summary>
+            Get List of Credential Definitions
+            </summary>
+            <param name="aGetCredentialDefinitionsRequest"><see cref="T:Hyperledger.Aries.AspNetCore.Features.CredentialDefinitions.GetCredentialDefinitionsRequest"/></param>
+            <returns><see cref="T:Hyperledger.Aries.AspNetCore.Features.CredentialDefinitions.GetCredentialDefinitionsResponse"/></returns>
+        </member>
+        <member name="M:Hyperledger.Aries.AspNetCore.Features.CredentialDefinitions.GetCredentialDefinitionEndpoint.Process(Hyperledger.Aries.AspNetCore.Features.CredentialDefinitions.GetCredentialDefinitionRequest)">
+            <summary>
+            Gets a credential definition from the ledger
+            </summary>
+            <param name="aGetCredentialDefinitionRequest"><see cref="T:Hyperledger.Aries.AspNetCore.Features.CredentialDefinitions.GetCredentialDefinitionRequest"/></param>
+            <returns><see cref="T:Hyperledger.Aries.AspNetCore.Features.CredentialDefinitions.GetCredentialDefinitionResponse"/></returns>
+        </member>
+        <member name="M:Hyperledger.Aries.AspNetCore.Features.Credentials.GetCredentialsEndpoint.Process(Hyperledger.Aries.AspNetCore.Features.Credentials.GetCredentialsRequest)">
+            <summary>
+            Lists the credentials
+            </summary>
+            <param name="aGetCredentialsRequest"><see cref="T:Hyperledger.Aries.AspNetCore.Features.Credentials.GetCredentialsRequest"/></param>
+            <returns><see cref="T:Hyperledger.Aries.AspNetCore.Features.Credentials.GetCredentialsResponse"/></returns>
+        </member>
+        <member name="M:Hyperledger.Aries.AspNetCore.Features.Credentials.GetCredentialEndpoint.Process(Hyperledger.Aries.AspNetCore.Features.Credentials.GetCredentialRequest)">
+            <summary>
+            Gets the credential by its Id
+            </summary>
+            <param name="aGetCredentialRequest"><see cref="T:Hyperledger.Aries.AspNetCore.Features.Credentials.GetCredentialRequest"/></param>
+            <returns><see cref="T:Hyperledger.Aries.AspNetCore.Features.Credentials.GetCredentialResponse"/></returns>
+        </member>
+        <member name="M:Hyperledger.Aries.AspNetCore.Features.Credentials.RemoveCredentialEndpoint.Process(Hyperledger.Aries.AspNetCore.Features.Credentials.RemoveCredentialRequest)">
+            <summary>
+            Remove a credential from the wallet by id
+            </summary>
+            <param name="aRemoveCredentialRequest"><see cref="T:Hyperledger.Aries.AspNetCore.Features.Credentials.RemoveCredentialRequest"/></param>
+            <returns><see cref="T:Hyperledger.Aries.AspNetCore.Features.Credentials.RemoveCredentialResponse"/></returns>
+        </member>
+        <member name="M:Hyperledger.Aries.AspNetCore.Features.IssueCredentials.OfferCredentialEndpoint.Process(Hyperledger.Aries.AspNetCore.Features.IssueCredentials.OfferCredentialRequest)">
+            <summary>
+            Send holder a credential offer, independent of any proposal
+            </summary>
+            <param name="aOfferCredentialRequest"><see cref="T:Hyperledger.Aries.AspNetCore.Features.IssueCredentials.OfferCredentialRequest"/></param>
+            <returns><see cref="T:Hyperledger.Aries.AspNetCore.Features.IssueCredentials.OfferCredentialResponse"/></returns>
+        </member>
+        <member name="M:Hyperledger.Aries.AspNetCore.Features.PresentProofs.AcceptProofRequestEndpoint.Process(Hyperledger.Aries.AspNetCore.Features.PresentProofs.AcceptProofRequestRequest)">
+            <summary>
+            Accept proof request
+            </summary>
+            <param name="aAcceptProofRequestRequest"><see cref="T:Hyperledger.Aries.AspNetCore.Features.PresentProofs.AcceptProofRequestRequest"/></param>
+            <returns><see cref="T:Hyperledger.Aries.AspNetCore.Features.PresentProofs.AcceptProofRequestResponse"/></returns>
+        </member>
+        <member name="M:Hyperledger.Aries.AspNetCore.Features.PresentProofs.CreateProofRequestEndpoint.Process(Hyperledger.Aries.AspNetCore.Features.PresentProofs.CreateProofRequestRequest)">
+            <summary>
+            Create a Request for Proof
+            </summary>
+            <param name="aCreateProofRequestRequest"><see cref="T:Hyperledger.Aries.AspNetCore.Features.PresentProofs.CreateProofRequestRequest"/></param>
+            <returns><see cref="T:Hyperledger.Aries.AspNetCore.Features.PresentProofs.CreateProofRequestResponse"/></returns>
+        </member>
+        <member name="M:Hyperledger.Aries.AspNetCore.Features.PresentProofs.GetCredentialsForProofEndpoint.Process(Hyperledger.Aries.AspNetCore.Features.PresentProofs.GetCredentialsForProofRequest)">
+            <summary>
+            Get list of credentials for the specific proof request
+            </summary>
+            <param name="aGetCredentialsForProofRequest"><see cref="T:Hyperledger.Aries.AspNetCore.Features.PresentProofs.GetCredentialsForProofRequest"/></param>
+            <returns><see cref="T:Hyperledger.Aries.AspNetCore.Features.PresentProofs.GetCredentialsForProofResponse"/></returns>
+        </member>
+        <member name="M:Hyperledger.Aries.AspNetCore.Features.PresentProofs.GetProofsEndpoint.Process(Hyperledger.Aries.AspNetCore.Features.PresentProofs.GetProofsRequest)">
+            <summary>
+            Get all Proof Request records
+            </summary>
+            <param name="aGetProofsRequest"><see cref="T:Hyperledger.Aries.AspNetCore.Features.PresentProofs.GetProofsRequest"/></param>
+            <returns><see cref="T:Hyperledger.Aries.AspNetCore.Features.PresentProofs.GetProofsResponse"/></returns>
+        </member>
+        <member name="M:Hyperledger.Aries.AspNetCore.Features.PresentProofs.GetProofEndpoint.Process(Hyperledger.Aries.AspNetCore.Features.PresentProofs.GetProofRequest)">
+            <summary>
+            Get a specific proof request record
+            </summary>
+            <param name="aGetProofRequest"><see cref="T:Hyperledger.Aries.AspNetCore.Features.PresentProofs.GetProofRequest"/></param>
+            <returns><see cref="T:Hyperledger.Aries.AspNetCore.Features.PresentProofs.GetProofResponse"/></returns>
+        </member>
+        <member name="M:Hyperledger.Aries.AspNetCore.Features.Schemas.CreateSchemaEndpoint.Process(Hyperledger.Aries.AspNetCore.Features.Schemas.CreateSchemaRequest)">
+            <summary>
+            Creates new schema
+            </summary>
+            <param name="aCreateSchemaRequest"><see cref="T:Hyperledger.Aries.AspNetCore.Features.Schemas.CreateSchemaRequest"/></param>
+            <returns><see cref="T:Hyperledger.Aries.AspNetCore.Features.Schemas.CreateSchemaResponse"/></returns>
+        </member>
+        <member name="M:Hyperledger.Aries.AspNetCore.Features.Schemas.GetSchemasEndpoint.Process(Hyperledger.Aries.AspNetCore.Features.Schemas.GetSchemasRequest)">
+            <summary>
+            Lists the known schemas
+            </summary>
+            <param name="aGetSchemasRequest"><see cref="T:Hyperledger.Aries.AspNetCore.Features.Schemas.GetSchemasRequest"/></param>
+            <returns><see cref="T:Hyperledger.Aries.AspNetCore.Features.Schemas.GetSchemasResponse"/></returns>
+        </member>
+        <member name="M:Hyperledger.Aries.AspNetCore.Features.Schemas.GetSchemaEndpoint.Process(Hyperledger.Aries.AspNetCore.Features.Schemas.GetSchemaRequest)">
+            <summary>
+            Returns the Schema with requested <see cref="P:Hyperledger.Aries.AspNetCore.Features.Schemas.GetSchemaRequest.SchemaId"/>
+            </summary>
+            <param name="aGetSchemaRequest"><see cref="T:Hyperledger.Aries.AspNetCore.Features.Schemas.GetSchemaRequest"/></param>
+            <returns><see cref="T:Hyperledger.Aries.AspNetCore.Features.Schemas.GetSchemaResponse"/></returns>
+        </member>
+        <member name="M:Hyperledger.Aries.AspNetCore.Features.Wallets.GetWalletEndpoint.Process(Hyperledger.Aries.AspNetCore.Features.Wallets.GetWalletRequest)">
+            <summary>
+            Returns the Provisioning information for the agent.
+            </summary>
+            <param name="aGetWalletRequest"></param>
+        </member>
+        <member name="M:Hyperledger.Aries.AspNetCore.Features.Wallets.ResetWalletEndpoint.Process(Hyperledger.Aries.AspNetCore.Features.Wallets.ResetWalletRequest)">
+            <summary>
+            Caution! All Data will be lost.
+            Delete and Create New Wallet and reprovision the Agent.
+            </summary>
+            <param name="aResetWalletRequest"><see cref="T:Hyperledger.Aries.AspNetCore.Features.Wallets.ResetWalletRequest"/></param>
+            <returns><see cref="T:Hyperledger.Aries.AspNetCore.Features.Wallets.ResetWalletResponse"/></returns>
+        </member>
+        <member name="T:Hyperledger.Aries.AspNetCore.TailsMiddleware">
+            <summary>
+            A middleware that serves tails data for revocation registries
+            </summary>
+        </member>
+        <member name="M:Hyperledger.Aries.AspNetCore.TailsMiddleware.#ctor(Microsoft.AspNetCore.Http.RequestDelegate,Microsoft.Extensions.Logging.ILogger{Hyperledger.Aries.AspNetCore.TailsMiddleware},Microsoft.Extensions.Options.IOptions{Hyperledger.Aries.Configuration.AgentOptions})">
+            <summary>
+            Initializes a new instance of the <see cref="T:Hyperledger.Aries.AspNetCore.TailsMiddleware" /> class.
+            </summary>
+            <param name="aNextRequestDelegate">The next.</param>
+            <param name="aLogger">The logger.</param>
+            <param name="aAgentOptions">The agent options.</param>
+        </member>
+        <member name="M:Hyperledger.Aries.AspNetCore.TailsMiddleware.InvokeAsync(Microsoft.AspNetCore.Http.HttpContext)">
+            <summary>
+            Middleware invocation method
+            </summary>
+            <param name="aHttpContext">The http context.</param>
+            <returns></returns>
+        </member>
+        <member name="T:Microsoft.Extensions.DependencyInjection.ApplicationBuilderExtensions">
+            <summary>
+            <see cref="T:Microsoft.Extensions.DependencyInjection.IServiceCollection"/> extension methods
+            </summary>
+        </member>
+        <member name="M:Microsoft.Extensions.DependencyInjection.ApplicationBuilderExtensions.UseAriesFramework(Microsoft.AspNetCore.Builder.IApplicationBuilder)">
+            <summary>
+            Allows default agent configuration
+            </summary>
+            <param name="aApplicationBuilder">App.</param>
+        </member>
+        <member name="M:Microsoft.Extensions.DependencyInjection.ApplicationBuilderExtensions.UseAriesFramework``1(Microsoft.AspNetCore.Builder.IApplicationBuilder)">
+            <summary>
+            Allows agent configuration by specifying a custom middleware
+            </summary>
+            <param name="aApplicationBuilder">App.</param>
+        </member>
+        <member name="M:Microsoft.Extensions.DependencyInjection.ApplicationBuilderExtensions.UseAriesOpenApi(Microsoft.AspNetCore.Builder.IApplicationBuilder)">
+            <summary>
+            Allows agent configuration by specifying a custom middleware
+            </summary>
+            <remarks>Requires corresponding call to AddAriesOpenApi in ConfigureServices</remarks>
+            <param name="aApplicationBuilder">App.</param>
+        </member>
+        <member name="T:Microsoft.Extensions.DependencyInjection.MvcBuilderExtensions">
+            <summary>
+            IMvcBuilder Extension Methods
+            </summary>
+        </member>
+        <member name="M:Microsoft.Extensions.DependencyInjection.MvcBuilderExtensions.AddAriesOpenApi(Microsoft.Extensions.DependencyInjection.IMvcBuilder,System.Action{Hyperledger.Aries.AspNetCore.Configuration.AriesOpenApiOptions})">
+            <summary>
+            Register Aries Open Api services
+            </summary>
+            <param name="aMvcBuilder"></param>
+            <param name="aConfigureAriesOpenApiOptionsAction"></param>
+        </member>
+    </members>
+</doc>

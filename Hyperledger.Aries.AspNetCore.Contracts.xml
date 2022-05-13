@@ -1,0 +1,151 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Hyperledger.Aries.AspNetCore.Contracts</name>
+    </assembly>
+    <members>
+        <member name="P:Hyperledger.Aries.AspNetCore.Features.Bases.BaseRequest.CorrelationId">
+            <summary>
+            Unique Identifier
+            </summary>
+        </member>
+        <member name="P:Hyperledger.Aries.AspNetCore.Features.Bases.BaseResponse.CorrelationId">
+            <summary>
+            Used to correlate request and response
+            </summary>
+        </member>
+        <member name="P:Hyperledger.Aries.AspNetCore.Features.BasicMessaging.SendMessageRequest.ConnectionId">
+            <summary>
+            The Id of the Connection to use to send the message
+            </summary>
+            <example>Connection identifier</example>
+        </member>
+        <member name="P:Hyperledger.Aries.AspNetCore.Features.BasicMessaging.SendMessageRequest.Message">
+            <summary>
+            The Message to send
+            </summary>
+            <example>Hello Friend</example>
+        </member>
+        <member name="T:Hyperledger.Aries.AspNetCore.Features.Connections.CreateInvitationRequest">
+            <summary>
+            Create Invitation Request
+            </summary>
+        </member>
+        <member name="M:Hyperledger.Aries.AspNetCore.Features.Connections.CreateInvitationRequest.#ctor">
+            <summary>
+            Parameterless constructor for System.Text.Json
+            </summary>
+        </member>
+        <member name="P:Hyperledger.Aries.AspNetCore.Features.Connections.CreateInvitationResponse.ConnectionInvitationMessage">
+            <summary>
+            Represents an invitation message for establishing connection.
+            </summary>
+        </member>
+        <member name="P:Hyperledger.Aries.AspNetCore.Features.Connections.DeleteConnectionRequest.ConnectionId">
+            <summary>
+            The Id of the Connection to use to send the message
+            </summary>
+            <example>Connection identifier</example>
+        </member>
+        <member name="P:Hyperledger.Aries.AspNetCore.Features.Connections.GetConnectionRequest.ConnectionId">
+            <summary>
+            The Id of the Connection
+            </summary>
+            <example>Connection identifier</example>
+        </member>
+        <member name="P:Hyperledger.Aries.AspNetCore.Features.Connections.SendPingRequest.ConnectionId">
+            <summary>
+            The Id of the Connection to use to send the message
+            </summary>
+            <example>Connection identifier</example>
+        </member>
+        <member name="P:Hyperledger.Aries.AspNetCore.Features.CredentialDefinitions.CreateCredentialDefinitionRequest.EnableRevocation">
+            <summary>
+            Should these credentials be revocable
+            </summary>
+        </member>
+        <member name="P:Hyperledger.Aries.AspNetCore.Features.CredentialDefinitions.CreateCredentialDefinitionRequest.SchemaId">
+            <summary>
+            The Id of the Schema to be used for the Credential Definition
+            </summary>
+            <example>WgWxqztrNooG92RXvxSTWv:2:schema_name:1.0</example>
+        </member>
+        <member name="P:Hyperledger.Aries.AspNetCore.Features.CredentialDefinitions.CreateCredentialDefinitionRequest.Tag">
+            <summary>
+            Credential definition identifier tag
+            </summary>
+            <example>default</example>
+        </member>
+        <member name="P:Hyperledger.Aries.AspNetCore.Features.CredentialDefinitions.GetCredentialDefinitionRequest.CredentialDefinitionId">
+            <summary>
+            The Id of the Credential Definition to retrieve
+            </summary>
+            <example>5</example>
+        </member>
+        <member name="P:Hyperledger.Aries.AspNetCore.Features.Credentials.GetCredentialRequest.CredentialId">
+            <summary>
+            The Id of the Credential to return
+            </summary>
+            <example>5</example>
+        </member>
+        <member name="P:Hyperledger.Aries.AspNetCore.Features.Credentials.RemoveCredentialRequest.CredentialId">
+            <summary>
+            The Id of the Credential to return
+            </summary>
+            <example>5</example>
+        </member>
+        <member name="P:Hyperledger.Aries.AspNetCore.Features.IssueCredentials.OfferCredentialRequest.ConnectionId">
+            <summary>
+            The ConnectionId to use to send the offer
+            </summary>
+            <example>TODO</example>
+        </member>
+        <member name="P:Hyperledger.Aries.AspNetCore.Features.PresentProofs.AcceptProofRequestRequest.EncodedProofRequestMessage">
+            <summary>
+            Set Properties and Update Docs
+            </summary>
+            <example>TODO</example>
+        </member>
+        <member name="P:Hyperledger.Aries.AspNetCore.Features.PresentProofs.CreateProofRequestRequest.ConnectionId">
+            <summary>
+            Set Properties and Update Docs
+            </summary>
+            <example>TODO</example>
+        </member>
+        <member name="P:Hyperledger.Aries.AspNetCore.Features.PresentProofs.GetCredentialsForProofRequest.ProofId">
+            <summary>
+            Set Properties and Update Docs
+            </summary>
+            <example>TODO</example>
+        </member>
+        <member name="P:Hyperledger.Aries.AspNetCore.Features.PresentProofs.GetProofRequest.ProofId">
+            <summary>
+            Set Properties and Update Docs
+            </summary>
+            <example>TODO</example>
+        </member>
+        <member name="P:Hyperledger.Aries.AspNetCore.Features.Schemas.CreateSchemaRequest.AttributeNames">
+            <summary>
+            The list of Attribute Names to be incldude in the Schema.
+            </summary>
+        </member>
+        <member name="P:Hyperledger.Aries.AspNetCore.Features.Schemas.CreateSchemaRequest.Name">
+            <summary>
+            The Name of the Schema to create.
+            </summary>
+            <example>EducationDegree</example>
+        </member>
+        <member name="P:Hyperledger.Aries.AspNetCore.Features.Schemas.CreateSchemaRequest.Version">
+            <summary>
+            The Version of the Schema to create.
+            </summary>
+            <example>EducationDegree</example>
+        </member>
+        <member name="P:Hyperledger.Aries.AspNetCore.Features.Schemas.GetSchemaRequest.SchemaId">
+            <summary>
+            Id of the Schema to return
+            </summary>
+            <example>5</example>
+        </member>
+    </members>
+</doc>
